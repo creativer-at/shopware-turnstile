@@ -28,7 +28,7 @@ class CloudFlareTurnstile extends AbstractCaptcha
     /**
      * {@inheritdoc}
      */
-    public function isValid(Request $request /* , array $captchaConfig */): bool
+    public function isValid(Request $request , array $captchaConfig): bool
     {
         if (\func_num_args() < 2 || !\is_array(func_get_arg(1))) {
             Feature::triggerDeprecationOrThrow(

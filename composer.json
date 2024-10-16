@@ -7,10 +7,13 @@
     "authors": [
         {
             "name": "Melvin Achterhuis"
+        },
+        {
+            "name": "Nils Gerhardt | SLINIcraftet204"
         }
     ],
     "require": {
-        "shopware/core": "6.4.*",
+        "shopware/core": "6.5.*",
         "ext-curl": "*"
     },
     "autoload": {
