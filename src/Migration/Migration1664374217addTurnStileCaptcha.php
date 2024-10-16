@@ -56,7 +56,7 @@ class Migration1664374217addTurnStileCaptcha extends MigrationStep
     public function update(Connection $connection): void
     {
         //TODO: Can we prevent overriding current CAPTCHA settings?
-        $configId = $connection->fetchColumn('SELECT id FROM system_config WHERE configuration_key = :key AND updated_at IS NULL', [
+        $configId = $connection->fetchOne('SELECT id FROM system_config WHERE configuration_key = :key AND updated_at IS NULL', [
             'key' => self::CONFIG_KEY,
         ]);
 
