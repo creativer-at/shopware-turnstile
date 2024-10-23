@@ -62,6 +62,7 @@ Shopware.Component.override('sw-settings-captcha-select-v2', {
             handler(newValue) {
                 // Stellen Sie sicher, dass die Änderungen persistent sind
                 this.$emit('input', this.currentValue);
+                console.log('currentValue.cloudFlareTurnstile:', this.currentValue.cloudFlareTurnstile);
             }
         }
     }
