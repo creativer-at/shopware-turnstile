@@ -15,8 +15,7 @@ Shopware.Component.override('sw-settings-captcha-select-v2', {
 
                     {% block sw_settings_captcha_select_v2_cloudflare_turnstile_site_key %}
                         <sw-text-field
-                            :value="currentValue.cloudFlareTurnstile.config.siteKey"
-                            @input="updateSiteKey($event)"
+                            v-model="currentValue.cloudFlareTurnstile.config.siteKey"
                             name="cloudFlareTurnstileSiteKey"
                             :label="$tc('sw-settings-basic-information.captcha.label.cloudFlareTurnstileSiteKey')"
                         />
@@ -24,8 +23,7 @@ Shopware.Component.override('sw-settings-captcha-select-v2', {
 
                     {% block sw_settings_captcha_select_v2_cloudflare_turnstile_secret_key %}
                         <sw-text-field
-                            :value="currentValue.cloudFlareTurnstile.config.secretKey"
-                            @input="updateSecretKey($event)"
+                            v-model="currentValue.cloudFlareTurnstile.config.secretKey"
                             name="cloudFlareTurnstileSecretKey"
                             :label="$tc('sw-settings-basic-information.captcha.label.cloudFlareTurnstileSecretKey')"
                         />
@@ -35,51 +33,35 @@ Shopware.Component.override('sw-settings-captcha-select-v2', {
         {% endblock %}
     `,
 
-    data() {
-        return {
-            defaultConfig: {
-                isActive: false,
-                config: {
-                    siteKey: '',
-                    secretKey: ''
-                }
-            }
-        };
-    },
-
     created() {
-        this.initializeTurnstileConfig();
+        this.initConfig();
     },
 
     methods: {
-        initializeTurnstileConfig() {
+        initConfig() {
             if (!this.currentValue.cloudFlareTurnstile) {
-                this.$set(this.currentValue, 'cloudFlareTurnstile', { ...this.defaultConfig });
+                this.$set(this.currentValue, 'cloudFlareTurnstile', {
+                    isActive: false,
+                    config: {
+                        siteKey: '',
+                        secretKey: ''
+                    }
+                });
             } else if (!this.currentValue.cloudFlareTurnstile.config) {
-                this.$set(this.currentValue.cloudFlareTurnstile, 'config', { ...this.defaultConfig.config });
+                this.$set(this.currentValue.cloudFlareTurnstile, 'config', {
+                    siteKey: '',
+                    secretKey: ''
+                });
             }
-        },
-
-        updateSiteKey(value) {
-            this.$set(this.currentValue.cloudFlareTurnstile.config, 'siteKey', value);
-            this.updateCaptchaConfig();
-        },
-
-        updateSecretKey(value) {
-            this.$set(this.currentValue.cloudFlareTurnstile.config, 'secretKey', value);
-            this.updateCaptchaConfig();
-        },
-
-        updateCaptchaConfig() {
-            this.$emit('config-update', this.currentValue);
         }
     },
 
     watch: {
         'currentValue.cloudFlareTurnstile.config': {
             deep: true,
-            handler(newVal) {
-                console.debug('Turnstile config updated:', newVal);
+            handler(newValue) {
+                // Stellen Sie sicher, dass die Änderungen persistent sind
+                this.$emit('input', this.currentValue);
             }
         }
     }
