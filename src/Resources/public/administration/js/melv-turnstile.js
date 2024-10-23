@@ -59,30 +59,39 @@
             i = s.Component,
             c = s.Locale;
         c.extend("en-GB", l), c.extend("de-DE", r), i.override("sw-settings-captcha-select-v2", {
-            template: `\n{% block sw_settings_captcha_select_v2_google_recaptcha_v2 %}\n    {% parent() %}\n    {% block sw_settings_captcha_select_v2_cloudflare_turnstile %}\n        <sw-container\n                v-if="currentValue.cloudFlareTurnstile && currentValue.cloudFlareTurnstile.isActive"\n                class="sw-settings-captcha-select-v2__cloudflare-turnstile"\n        >\n\n        \n            {% block sw_settings_captcha_select_v2_cloudflare_turnstile_description %}\n                <p class="sw-settings-captcha-select-v2__description sw-settings-captcha-select-v2__cloudflare-turnstile-description">\n                    {{ $tc(\'sw-settings-basic-information.captcha.label.cloudFlareTurnstileDescription\') }}\n                </p>\n            {% endblock %}\n\n            \n            {% block sw_settings_captcha_select_v2_cloudflare_turnstile_site_key %}\n                <sw-text-field\n                        v-model="currentValue.cloudFlareTurnstile.config.siteKey"\n                        name="cloudFlareTurnstileSiteKey"\n                        :label="$tc(\'sw-settings-basic-information.captcha.label.cloudFlareTurnstileSiteKey\')"\n        @blur="updateCaptchaConfig"\n                />\n            {% endblock %}\n\n            \n            {% block sw_settings_captcha_select_v2_cloudflare_turnstile_secret_key %}\n                <sw-text-field\n                        v-model="currentValue.cloudFlareTurnstile.config.secretKey"\n                        name="cloudFlareTurnstileSecretKey"\n                        :label="$tc(\'sw-settings-basic-information.captcha.label.cloudFlareTurnstileSecretKey\')"\n        @blur="updateCaptchaConfig"\n                />\n            {% endblock %}\n        </sw-container>\n    {% endblock %}\n{% endblock %}`,
+            template: `\n{% block sw_settings_captcha_select_v2_google_recaptcha_v2 %}\n    {% parent() %}\n    {% block sw_settings_captcha_select_v2_cloudflare_turnstile %}\n        <sw-container\n                v-if="currentValue.cloudFlareTurnstile && currentValue.cloudFlareTurnstile.isActive"\n                class="sw-settings-captcha-select-v2__cloudflare-turnstile"\n        >\n\n        \n            {% block sw_settings_captcha_select_v2_cloudflare_turnstile_description %}\n                <p class="sw-settings-captcha-select-v2__description sw-settings-captcha-select-v2__cloudflare-turnstile-description">\n                    {{ $tc(\'sw-settings-basic-information.captcha.label.cloudFlareTurnstileDescription\') }}\n                </p>\n            {% endblock %}\n\n            \n            {% block sw_settings_captcha_select_v2_cloudflare_turnstile_site_key %}\n                <sw-text-field\n                        v-model="currentValue.cloudFlareTurnstile.config.siteKey"\n                        name="cloudFlareTurnstileSiteKey"\n                        :label="$tc(\'sw-settings-basic-information.captcha.label.cloudFlareTurnstileSiteKey\')"\n        @input="updateCaptchaConfig"\n        @blur="updateCaptchaConfig"\n                />\n            {% endblock %}\n\n            \n            {% block sw_settings_captcha_select_v2_cloudflare_turnstile_secret_key %}\n                <sw-text-field\n                        v-model="currentValue.cloudFlareTurnstile.config.secretKey"\n                        name="cloudFlareTurnstileSecretKey"\n                        :label="$tc(\'sw-settings-basic-information.captcha.label.cloudFlareTurnstileSecretKey\')"\n        @input="updateCaptchaConfig"\n        @blur="updateCaptchaConfig"\n               />\n            {% endblock %}\n        </sw-container>\n    {% endblock %}\n{% endblock %}`,
 
             mounted() {
-                if (!this.currentValue.cloudFlareTurnstile) {
-                    this.currentValue.cloudFlareTurnstile = {
-                        isActive: false,
-                        config: {
+                // Warte, bis die Daten verfügbar sind
+                this.$nextTick(() => {
+                    if (!this.currentValue.cloudFlareTurnstile) {
+                        this.currentValue.cloudFlareTurnstile = {
+                            isActive: false,
+                            config: {
+                                siteKey: '',
+                                secretKey: ''
+                            }
+                        };
+                    } else if (!this.currentValue.cloudFlareTurnstile.config) {
+                        this.currentValue.cloudFlareTurnstile.config = {
                             siteKey: '',
                             secretKey: ''
-                        }
-                    };
-                }
-                console.log('currentValue.cloudFlareTurnstile:', this.currentValue.cloudFlareTurnstile);
+                        };
+                    }
+
+                    console.log('Mounted - Initial cloudFlareTurnstile:', JSON.stringify(this.currentValue.cloudFlareTurnstile.config));
+                });
             },
 
             methods: {
-                // Test handler
-                handleInput(event) {
-                    console.log('input triggered:', event);
-                },
-
                 updateCaptchaConfig() {
-                    this.$emit('input', this.currentValue.cloudFlareTurnstile.config);
-                    console.log('Updated Captcha Config:', this.currentValue.cloudFlareTurnstile.config);
+                    console.log('Before updating - SiteKey:', this.currentValue.cloudFlareTurnstile.config.siteKey);
+                    console.log('Before updating - SecretKey:', this.currentValue.cloudFlareTurnstile.config.secretKey);
+
+                    this.$set(this.currentValue.cloudFlareTurnstile.config, 'siteKey', this.currentValue.cloudFlareTurnstile.config.siteKey);
+                    this.$set(this.currentValue.cloudFlareTurnstile.config, 'secretKey', this.currentValue.cloudFlareTurnstile.config.secretKey);
+
+                    console.log('Updated Captcha Config:', JSON.stringify(this.currentValue.cloudFlareTurnstile.config));
                 }
             }
         });
