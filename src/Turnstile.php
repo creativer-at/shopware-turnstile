@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 
-namespace Melv\Turnstile;
+namespace Creativer\Turnstile;
 
 use Shopware\Core\Framework\Plugin;
 
-class MelvTurnstile extends Plugin {}
+class Turnstile extends Plugin {}

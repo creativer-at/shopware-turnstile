@@ -1,7 +1,7 @@
 {
-  "name": "melvinachterhuis/turnstile-shopware6-plugin",
-  "description": "CloudFlare Turnstile Captcha",
-  "version": "0.1.0",
+  "name": "creativer/shopware-turnstile",
+  "description": "Shopware Turnstile",
+  "version": "0.0.1",
   "type": "shopware-platform-plugin",
   "license": "MIT",
   "authors": [
@@ -13,19 +13,19 @@
     }
   ],
   "require": {
-    "shopware/core": "6.6.*",
+    "shopware/core": "6.*",
     "ext-curl": "*"
   },
   "autoload": {
     "psr-4": {
-      "Melv\\Turnstile\\": "src/"
+      "Creativer\\Turnstile\\": "src/"
     }
   },
   "extra": {
-    "shopware-plugin-class": "Melv\\Turnstile\\MelvTurnstile",
+    "shopware-plugin-class": "Creativer\\Turnstile\\Turnstile",
     "label": {
-      "de-DE": "CloudFlare Turnstile Captcha",
-      "en-GB": "CloudFlare Turnstile Captcha"
+      "de-DE": "Turnstile",
+      "en-GB": "Turnstile"
     }
   }
 }

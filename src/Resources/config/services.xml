@@ -5,7 +5,7 @@
   xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd"
 >
   <services>
-    <service id="Melv\Turnstile\Storefront\Framework\Captcha\CloudFlareTurnstile">
+    <service id="Creativer\Turnstile\Storefront\Framework\Captcha\Turnstile">
       <argument type="service" id="shopware.captcha.client" />
       <tag name="shopware.storefront.captcha" priority="50" />
     </service>

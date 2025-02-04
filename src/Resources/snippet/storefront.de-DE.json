@@ -1,7 +1,0 @@
-{
-  "captcha": {
-    "cloudFlareTurnstile": {
-      "dataProtectionInformation": "Dieser Shop wird durch CloudFlare Turnstile geschützt <a href=\"https://www.cloudflare.com/en-gb/privacypolicy/\">Privacy Policy</a> and <a href=\"https://www.cloudflare.com/en-gb/website-terms/\">Terms of Service</a> apply."
-    }
-  }
-}

@@ -1,15 +1,19 @@
 <?php declare(strict_types=1);
 
-namespace Melv\Turnstile\Migration;
+namespace Creativer\Turnstile\Migration;
 
 use Doctrine\DBAL\Connection;
-use Shopware\Core\Defaults;
 use Shopware\Core\Framework\Migration\MigrationStep;
+use Shopware\Core\Defaults;
 
-class Migration1664374217addTurnStileCaptcha extends MigrationStep
+/**
+ * @internal
+ */
+class Migration1738676965Turnstile extends MigrationStep
 {
   private const CONFIG_KEY = "core.basicInformation.activeCaptchasV2";
 
+  /// TODO: get this data from db
   private array $captchaItems = [
     "honeypot" => [
       "name" => "Honeypot",
@@ -40,21 +44,16 @@ class Migration1664374217addTurnStileCaptcha extends MigrationStep
     "cloudFlareTurnstile" => [
       "name" => "cloudFlareTurnstile",
       "isActive" => false,
-      "config" => [
-        "siteKey" => "",
-        "secretKey" => "",
-      ],
     ],
   ];
 
   public function getCreationTimestamp(): int
   {
-    return 1664374217;
+    return 1738676965;
   }
 
   public function update(Connection $connection): void
   {
-    //TODO: Can we prevent overriding current CAPTCHA settings?
     $configId = $connection->fetchOne(
       "SELECT id FROM system_config WHERE configuration_key = :key AND updated_at IS NULL",
       [
@@ -77,10 +76,5 @@ class Migration1664374217addTurnStileCaptcha extends MigrationStep
         "id" => $configId,
       ]
     );
-  }
-
-  public function updateDestructive(Connection $connection): void
-  {
-    // implement update destructive
   }
 }

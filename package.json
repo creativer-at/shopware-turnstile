@@ -1,12 +1,12 @@
 {
   "type": "module",
   "name": "@creativer/shopware-turnstile",
-  "version": "1.0.0",
   "license": "MIT",
   "private": true,
   "scripts": {
     "format": "prettier --write \"**/*.{js,ts,json,css,php,xml,twig}\"",
-    "format:check": "prettier --check \"**/*.{js,ts,json,css,php,xml,twig}\""
+    "format:check": "prettier --check \"**/*.{js,ts,json,css,php,xml,twig}\"",
+    "lint": "find ./src -type f -name '*.php' -exec php -l {} \\;"
   },
   "devDependencies": {
     "@prettier/plugin-php": "0.22.4",
