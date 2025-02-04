@@ -10,7 +10,7 @@
     }
   ],
   "require": {
-    "shopware/core": "6.6.*",
+    "shopware/core": "~6.6.0",
     "ext-curl": "*"
   },
   "autoload": {
