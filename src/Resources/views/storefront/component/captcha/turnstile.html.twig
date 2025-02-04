@@ -1,3 +1,6 @@
 {% block component_captcha_turnstile %}
-  <div class="cf-turnstile mb-2" data-sitekey="1x00000000000000000000AA" />
+  <div
+    class="cf-turnstile mb-2"
+    data-sitekey="{{ env('TURNSTILE_SITE', '1x00000000000000000000AA') }}"
+  />
 {% endblock %}

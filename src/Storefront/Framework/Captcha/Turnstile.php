@@ -4,9 +4,10 @@ namespace Creativer\Turnstile\Storefront\Framework\Captcha;
 
 use GuzzleHttp\ClientInterface;
 use Psr\Http\Client\ClientExceptionInterface;
+use Symfony\Component\HttpFoundation\Request;
 use Shopware\Core\Framework\Feature;
 use Shopware\Storefront\Framework\Captcha\AbstractCaptcha;
-use Symfony\Component\HttpFoundation\Request;
+use Shopware\Core\DevOps\Environment\EnvironmentHelper;
 
 class Turnstile extends AbstractCaptcha
 {
@@ -33,7 +34,10 @@ class Turnstile extends AbstractCaptcha
       return false;
     }
 
-    $secretKey = "1x0000000000000000000000000000000AA";
+    $secretKey = EnvironmentHelper::getVariable(
+      "TURNSTILE_SECRET",
+      "1x0000000000000000000000000000000AA"
+    );
 
     try {
       $response = $this->client->request(
