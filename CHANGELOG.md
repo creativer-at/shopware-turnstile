@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/creativer-at/shopware-turnstile/compare/v0.1.1...v0.2.0) (2025-02-04)
+
+
+### Features
+
+* register form validation ([4689725](https://github.com/creativer-at/shopware-turnstile/commit/468972578cb75cf48cb5bfd543d29440bc7f816b))
+
 ## [0.1.1](https://github.com/creativer-at/shopware-turnstile/compare/v0.1.0...v0.1.1) (2025-02-04)
 
 
