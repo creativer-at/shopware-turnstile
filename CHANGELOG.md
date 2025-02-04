@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.0](https://github.com/creativer-at/shopware-turnstile/compare/v0.0.3...v0.1.0) (2025-02-04)
+
+
+### Features
+
+* add twig env function ([9376015](https://github.com/creativer-at/shopware-turnstile/commit/937601502c08d3cbd3001c9ff0ce03437bd4a31f))
+* get turnstile config from env ([a4685b8](https://github.com/creativer-at/shopware-turnstile/commit/a4685b843ab2b5d65373d34484eba94ce9212d70))
+
 ## [0.0.3](https://github.com/creativer-at/shopware-turnstile/compare/v0.0.2...v0.0.3) (2025-02-04)
 
 
