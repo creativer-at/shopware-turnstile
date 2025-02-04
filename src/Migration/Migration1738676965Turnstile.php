@@ -41,8 +41,8 @@ class Migration1738676965Turnstile extends MigrationStep
         "thresholdScore" => 0.5,
       ],
     ],
-    "cloudFlareTurnstile" => [
-      "name" => "cloudFlareTurnstile",
+    "turnstile" => [
+      "name" => "turnstile",
       "isActive" => false,
     ],
   ];
