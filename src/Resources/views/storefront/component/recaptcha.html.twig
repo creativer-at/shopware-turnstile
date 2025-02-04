@@ -4,7 +4,15 @@
   {{ parent() }}
   {% block component_head_javascript_turnstile %}
     {% if config('core.basicInformation.activeCaptchasV2.turnstile.isActive') %}
-      <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer />
+      <script
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+        async
+        defer
+      ></script>
+      <script>
+        function _turnstileCb() { for(const e of
+        document.getElementsByClassName("cf-turnstile-verified")) { e.checked = true; } }
+      </script>
     {% endif %}
   {% endblock %}
 {% endblock %}

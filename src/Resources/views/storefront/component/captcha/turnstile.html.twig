@@ -1,8 +1,16 @@
 {% block component_captcha_turnstile %}
   <div>
     <div
-      class="cf-turnstile mb-2"
+      class="cf-turnstile"
       data-sitekey="{{ env('TURNSTILE_SITE', '1x00000000000000000000AA') }}"
+      data-callback="_turnstileCb"
+    ></div>
+    <input
+      type="checkbox"
+      class="cf-turnstile-verified"
+      style="opacity:0; height: 0;"
+      tabindex="-1"
+      required="required"
     />
   </div>
 {% endblock %}
