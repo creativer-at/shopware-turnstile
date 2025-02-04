@@ -6,14 +6,11 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Melvin Achterhuis"
-    },
-    {
-      "name": "Nils Gerhardt | SLINIcraftet204"
+      "name": "Creativer"
     }
   ],
   "require": {
-    "shopware/core": "6.*",
+    "shopware/core": "6.6.*",
     "ext-curl": "*"
   },
   "autoload": {
