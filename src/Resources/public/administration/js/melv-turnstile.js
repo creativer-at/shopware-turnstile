@@ -1,5 +1,5 @@
-Shopware.Component.override('sw-settings-captcha-select-v2', {
-    template: `
+Shopware.Component.override("sw-settings-captcha-select-v2", {
+  template: `
         {% block sw_settings_captcha_select_v2_google_recaptcha_v2 %}
             {% parent() %}
             {% block sw_settings_captcha_select_v2_cloudflare_turnstile %}
@@ -33,37 +33,40 @@ Shopware.Component.override('sw-settings-captcha-select-v2', {
         {% endblock %}
     `,
 
-    created() {
-        this.initConfig();
-    },
+  created() {
+    this.initConfig();
+  },
 
-    methods: {
-        initConfig() {
-            if (!this.currentValue.cloudFlareTurnstile) {
-                this.$set(this.currentValue, 'cloudFlareTurnstile', {
-                    isActive: false,
-                    config: {
-                        siteKey: '',
-                        secretKey: ''
-                    }
-                });
-            } else if (!this.currentValue.cloudFlareTurnstile.config) {
-                this.$set(this.currentValue.cloudFlareTurnstile, 'config', {
-                    siteKey: '',
-                    secretKey: ''
-                });
-            }
-        }
-    },
-
-    watch: {
-        'currentValue.cloudFlareTurnstile.config': {
-            deep: true,
-            handler(newValue) {
-                // Stellen Sie sicher, dass die Änderungen persistent sind
-                this.$emit('input', this.currentValue);
-                console.log('currentValue.cloudFlareTurnstile:', this.currentValue.cloudFlareTurnstile);
-            }
-        }
+  methods: {
+    initConfig() {
+      if (!this.currentValue.cloudFlareTurnstile) {
+        this.$set(this.currentValue, "cloudFlareTurnstile", {
+          isActive: false,
+          config: {
+            siteKey: "",
+            secretKey: ""
+          }
+        });
+      } else if (!this.currentValue.cloudFlareTurnstile.config) {
+        this.$set(this.currentValue.cloudFlareTurnstile, "config", {
+          siteKey: "",
+          secretKey: ""
+        });
+      }
     }
+  },
+
+  watch: {
+    "currentValue.cloudFlareTurnstile.config": {
+      deep: true,
+      handler(newValue) {
+        // Stellen Sie sicher, dass die Änderungen persistent sind
+        this.$emit("input", this.currentValue);
+        console.log(
+          "currentValue.cloudFlareTurnstile:",
+          this.currentValue.cloudFlareTurnstile
+        );
+      }
+    }
+  }
 });

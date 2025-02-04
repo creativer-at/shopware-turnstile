@@ -16,6 +16,11 @@
     "prettier": "3.4.2",
     "prettier-plugin-tailwindcss": "0.6.11"
   },
+  "pnpm": {
+    "patchedDependencies": {
+      "@zackad/prettier-plugin-twig": "patches/@zackad__prettier-plugin-twig.patch"
+    }
+  },
   "engines": {
     "node": "23.7.0"
   },

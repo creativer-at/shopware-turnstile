@@ -1,0 +1,13 @@
+diff --git a/src/melody/melody-parser/Lexer.js b/src/melody/melody-parser/Lexer.js
+index 3d798b65e591868445d33cf9c616d703186029c7..a5bc758818b820d6d6ad66d0bbc15b928c57cc70 100644
+--- a/src/melody/melody-parser/Lexer.js
++++ b/src/melody/melody-parser/Lexer.js
+@@ -666,7 +666,7 @@ function isWhitespace(c) {
+ }
+ 
+ function isAlpha(c) {
+-    return (65 <= c && c <= 90) || (97 <= c && c <= 122);
++    return (65 <= c && c <= 90) || (97 <= c && c <= 122) || c === 36;
+ }
+ 
+ function isDigit(c) {

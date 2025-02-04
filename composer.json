@@ -1,31 +1,31 @@
 {
-    "name": "melvinachterhuis/turnstile-shopware6-plugin",
-    "description": "CloudFlare Turnstile Captcha",
-    "version": "0.1.0",
-    "type": "shopware-platform-plugin",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Melvin Achterhuis"
-        },
-        {
-            "name": "Nils Gerhardt | SLINIcraftet204"
-        }
-    ],
-    "require": {
-        "shopware/core": "6.6.*",
-        "ext-curl": "*"
+  "name": "melvinachterhuis/turnstile-shopware6-plugin",
+  "description": "CloudFlare Turnstile Captcha",
+  "version": "0.1.0",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Melvin Achterhuis"
     },
-    "autoload": {
-        "psr-4": {
-            "Melv\\Turnstile\\": "src/"
-        }
-    },
-    "extra": {
-        "shopware-plugin-class": "Melv\\Turnstile\\MelvTurnstile",
-        "label": {
-            "de-DE": "CloudFlare Turnstile Captcha",
-            "en-GB": "CloudFlare Turnstile Captcha"
-        }
+    {
+      "name": "Nils Gerhardt | SLINIcraftet204"
     }
+  ],
+  "require": {
+    "shopware/core": "6.6.*",
+    "ext-curl": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Melv\\Turnstile\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "Melv\\Turnstile\\MelvTurnstile",
+    "label": {
+      "de-DE": "CloudFlare Turnstile Captcha",
+      "en-GB": "CloudFlare Turnstile Captcha"
+    }
+  }
 }

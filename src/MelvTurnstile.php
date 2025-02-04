@@ -4,6 +4,4 @@ namespace Melv\Turnstile;
 
 use Shopware\Core\Framework\Plugin;
 
-class MelvTurnstile extends Plugin
-{
-}
+class MelvTurnstile extends Plugin {}
