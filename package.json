@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "name": "@creativer/shopware-turnstile",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,ts,json,css,php,xml,twig}\"",
+    "format:check": "prettier --check \"**/*.{js,ts,json,css,php,xml,twig}\""
+  },
+  "devDependencies": {
+    "@prettier/plugin-php": "0.22.4",
+    "@prettier/plugin-xml": "3.4.1",
+    "@trivago/prettier-plugin-sort-imports": "5.2.2",
+    "@zackad/prettier-plugin-twig": "0.15.0",
+    "prettier": "3.4.2",
+    "prettier-plugin-tailwindcss": "0.6.11"
+  },
+  "engines": {
+    "node": "23.7.0"
+  },
+  "packageManager": "pnpm@10.2.0+sha512.0d27364e0139c6aadeed65ada153135e0ca96c8da42123bd50047f961339dc7a758fc2e944b428f52be570d1bd3372455c1c65fa2e7aa0bfbf931190f9552001"
+}

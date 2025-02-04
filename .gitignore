@@ -1,4 +1,2 @@
 composer.phar/
-/composer.phar
-.idea
-
+node_modules/
