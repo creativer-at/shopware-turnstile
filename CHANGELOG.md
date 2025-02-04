@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.1.1](https://github.com/creativer-at/shopware-turnstile/compare/v0.1.0...v0.1.1) (2025-02-04)
+
+
+### Bug Fixes
+
+* composer shopware requirement ([c31dd6d](https://github.com/creativer-at/shopware-turnstile/commit/c31dd6d07f966058a56aad69a93c764dbcf94242))
+
+
+### Documentation
+
+* configuration ([19dcd50](https://github.com/creativer-at/shopware-turnstile/commit/19dcd50d3c7cc9e6af385467e69740d992561d24))
+
+
+### Miscellaneous Chores
+
+* wrap turnstile in additional div ([a2efe90](https://github.com/creativer-at/shopware-turnstile/commit/a2efe90045d14f0ab00a8a26de4348fccf2b38a1))
+
 ## [0.1.0](https://github.com/creativer-at/shopware-turnstile/compare/v0.0.3...v0.1.0) (2025-02-04)
 
 
