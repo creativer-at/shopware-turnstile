@@ -6,7 +6,8 @@
   "scripts": {
     "format": "prettier --write \"**/*.{js,ts,json,css,php,xml,twig}\"",
     "format:check": "prettier --check \"**/*.{js,ts,json,css,php,xml,twig}\"",
-    "lint": "find ./src -type f -name '*.php' -exec php -l {} \\;"
+    "lint": "find ./src -type f -name '*.php' -exec php -l {} \\;",
+    "check": "pnpm format:check && pnpm lint"
   },
   "devDependencies": {
     "@prettier/plugin-php": "0.22.4",
