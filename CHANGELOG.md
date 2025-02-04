@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.2](https://github.com/creativer-at/shopware-turnstile/compare/v0.0.1...v0.0.2) (2025-02-04)
+
+
+### Miscellaneous Chores
+
+* set author ([762f613](https://github.com/creativer-at/shopware-turnstile/commit/762f6137550bc8676358d0522897d9e2602014bd))
+
 ## [0.0.1](https://github.com/creativer-at/shopware-turnstile/compare/v0.0.1...v0.0.1) (2025-02-04)
 
 
