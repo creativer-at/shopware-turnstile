@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/creativer-at/shopware-turnstile/compare/v0.2.0...v0.2.1) (2025-02-05)
+
+
+### Bug Fixes
+
+* rename migration ([00eaaaf](https://github.com/creativer-at/shopware-turnstile/commit/00eaaafca4c2bdbd8451afdbd1c749280e97eaf6))
+
 ## [0.2.0](https://github.com/creativer-at/shopware-turnstile/compare/v0.1.1...v0.2.0) (2025-02-04)
 
 
