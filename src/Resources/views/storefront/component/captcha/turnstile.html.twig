@@ -3,12 +3,14 @@
     <div
       class="cf-turnstile"
       data-sitekey="{{ env('TURNSTILE_SITE', '1x00000000000000000000AA') }}"
+      data-appearance="interaction-only"
       data-callback="_turnstileCb"
     ></div>
     <input
+      aria-hidden="true"
       type="checkbox"
       class="cf-turnstile-verified"
-      style="opacity:0; height: 0;"
+      style="opacity:0; height:0;"
       tabindex="-1"
       required="required"
     />
