@@ -21,7 +21,7 @@ class Migration1738833174AddTurnstile extends MigrationStep
   public function update(Connection $connection): void
   {
     $json = $connection->fetchOne(
-      "SELECT id FROM system_config WHERE configuration_key = :key",
+      "SELECT configuration_value FROM system_config WHERE configuration_key = :key",
       [
         "key" => self::CONFIG_KEY,
       ]
@@ -44,12 +44,10 @@ class Migration1738833174AddTurnstile extends MigrationStep
     $connection->update(
       "system_config",
       [
-        "configuration_key" => self::CONFIG_KEY,
         "configuration_value" => json_encode($config),
-        "created_at" => (new \DateTime())->format(Defaults::STORAGE_DATE_TIME_FORMAT),
       ],
       [
-        "id" => $configId,
+        "configuration_key" => self::CONFIG_KEY,
       ]
     );
   }
