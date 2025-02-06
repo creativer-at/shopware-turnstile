@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.2](https://github.com/creativer-at/shopware-turnstile/compare/v0.2.1...v0.2.2) (2025-02-06)
+
+
+### Bug Fixes
+
+* migration ([a6c4262](https://github.com/creativer-at/shopware-turnstile/commit/a6c4262a0ed777b05fc1d7b4eed90cbaf3557b0d))
+
+
+### Miscellaneous Chores
+
+* show turnstile widget only when interaction required ([6fbe28f](https://github.com/creativer-at/shopware-turnstile/commit/6fbe28fd2ca158e39fa9065a73a02eb013a27d17))
+
 ## [0.2.1](https://github.com/creativer-at/shopware-turnstile/compare/v0.2.0...v0.2.1) (2025-02-05)
 
 
