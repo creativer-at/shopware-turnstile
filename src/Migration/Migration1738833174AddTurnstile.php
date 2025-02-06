@@ -9,7 +9,7 @@ use Shopware\Core\Defaults;
 /**
  * @internal
  */
-class Migration1738676965AddTurnstile extends MigrationStep
+class Migration1738833174AddTurnstile extends MigrationStep
 {
   private const CONFIG_KEY = "core.basicInformation.activeCaptchasV2";
 
