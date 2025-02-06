@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.5](https://github.com/creativer-at/shopware-turnstile/compare/v0.2.4...v0.2.5) (2025-02-06)
+
+
+### Documentation
+
+* usage ([3906353](https://github.com/creativer-at/shopware-turnstile/commit/3906353155ffe6a83cf99d48554dcdcac17cc4b2))
+
+
+### Miscellaneous Chores
+
+* move hidden checkbox for form validation above widget ([93aa964](https://github.com/creativer-at/shopware-turnstile/commit/93aa9649013a26e885550377cec9a7deba5bc044))
+
 ## [0.2.4](https://github.com/creativer-at/shopware-turnstile/compare/v0.2.3...v0.2.4) (2025-02-06)
 
 
