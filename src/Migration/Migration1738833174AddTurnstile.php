@@ -4,7 +4,6 @@ namespace Creativer\Turnstile\Migration;
 
 use Doctrine\DBAL\Connection;
 use Shopware\Core\Framework\Migration\MigrationStep;
-use Shopware\Core\Defaults;
 
 /**
  * @internal
