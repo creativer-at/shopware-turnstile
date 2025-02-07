@@ -13,7 +13,7 @@ class Turnstile extends AbstractCaptcha
 {
   public const CAPTCHA_NAME = "turnstile";
   public const CAPTCHA_REQUEST_PARAMETER = "cf-turnstile-response";
-  private const CLOUDFLARE_CAPTCHA_VERIFY_ENDPOINT = "https://challenges.cloudflare.com/turnstile/v0/siteverify";
+  private const CAPTCHA_VERIFY_ENDPOINT = "https://challenges.cloudflare.com/turnstile/v0/siteverify";
 
   private ClientInterface $client;
 
@@ -28,7 +28,7 @@ class Turnstile extends AbstractCaptcha
   /**
    * {@inheritdoc}
    */
-  public function isValid(Request $request, array $captchaConfig): bool
+  public function isValid(Request $request, array $config): bool
   {
     if (!$request->get(self::CAPTCHA_REQUEST_PARAMETER)) {
       return false;
@@ -40,17 +40,13 @@ class Turnstile extends AbstractCaptcha
     );
 
     try {
-      $response = $this->client->request(
-        "POST",
-        self::CLOUDFLARE_CAPTCHA_VERIFY_ENDPOINT,
-        [
-          "form_params" => [
-            "secret" => $secretKey,
-            "response" => $request->get(self::CAPTCHA_REQUEST_PARAMETER),
-            "remoteip" => $request->getClientIp(),
-          ],
-        ]
-      );
+      $response = $this->client->request("POST", self::CAPTCHA_VERIFY_ENDPOINT, [
+        "form_params" => [
+          "secret" => $secretKey,
+          "response" => $request->get(self::CAPTCHA_REQUEST_PARAMETER),
+          "remoteip" => $request->getClientIp(),
+        ],
+      ]);
 
       $responseRaw = $response->getBody()->getContents();
       $response = json_decode($responseRaw, true);
