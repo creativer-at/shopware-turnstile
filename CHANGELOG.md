@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.2.6](https://github.com/creativer-at/shopware-turnstile/compare/v0.2.5...v0.2.6) (2025-02-07)
+
+
+### Miscellaneous Chores
+
+* **deps:** update pnpm to v10.2.1 ([589a8a4](https://github.com/creativer-at/shopware-turnstile/commit/589a8a43fc8c5e7f4abbe8d072fc41d7a4c64227))
+* don't format js code in template ([e7ed4d5](https://github.com/creativer-at/shopware-turnstile/commit/e7ed4d52e24ecc3e5570a561c91950e9f1da2667))
+* remove unnecessary import in migration ([749e23e](https://github.com/creativer-at/shopware-turnstile/commit/749e23e4d3d0f719545abc9c0697c4e398b0d4bc))
+
+
+### Code Refactoring
+
+* rename some variables ([a553652](https://github.com/creativer-at/shopware-turnstile/commit/a5536523c00b98a7ff73e7c8f1b39fd0546ae9c1))
+
 ## [0.2.5](https://github.com/creativer-at/shopware-turnstile/compare/v0.2.4...v0.2.5) (2025-02-06)
 
 
