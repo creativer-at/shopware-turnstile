@@ -9,10 +9,13 @@
         async
         defer
       ></script>
+      {# prettier-ignore-start #}
       <script>
-        function _turnstileCb() { for(const e of
-        document.getElementsByClassName("cf-turnstile-verified")) { e.checked = true; } }
+        function _turnstileCb() {
+          for(const e of document.getElementsByClassName("cf-turnstile-verified")) { e.checked = true; }
+        }
       </script>
+      {# prettier-ignore-end #}
     {% endif %}
   {% endblock %}
 {% endblock %}
