@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.2.7](https://github.com/creativer-at/shopware-turnstile/compare/v0.2.6...v0.2.7) (2025-02-14)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency prettier to v3.5.0 ([87fc3ad](https://github.com/creativer-at/shopware-turnstile/commit/87fc3ada4c5ddfe2fc82a8f44f04c597433e7ac1))
+* **deps:** update dependency prettier to v3.5.1 ([07f18be](https://github.com/creativer-at/shopware-turnstile/commit/07f18bead444ca6f5fcafb0a2d7a07077db60dac))
+* **deps:** update node.js to v23.8.0 ([891b032](https://github.com/creativer-at/shopware-turnstile/commit/891b0323585018029046cfe016bb5a8a7a660183))
+* **deps:** update pnpm to v10.3.0 ([4ef6927](https://github.com/creativer-at/shopware-turnstile/commit/4ef6927b232890655a80c31b48bef0f23be8cb02))
+* **deps:** update pnpm to v10.4.0 ([bb9fca4](https://github.com/creativer-at/shopware-turnstile/commit/bb9fca43082a19a70fd6d8e6e4d3a084a0eac9a5))
+
 ## [0.2.6](https://github.com/creativer-at/shopware-turnstile/compare/v0.2.5...v0.2.6) (2025-02-07)
 
 
