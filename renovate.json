@@ -16,6 +16,14 @@
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "matchCurrentVersion": "!/^0/",
       "automerge": true
+    },
+    {
+      "matchPackageNames": [
+        "@prettier/plugin-php",
+        "@zackad/prettier-plugin-twig",
+        "prettier-plugin-tailwindcss"
+      ],
+      "automerge": true
     }
   ]
 }
