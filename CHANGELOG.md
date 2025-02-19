@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.2.7](https://github.com/creativer-at/shopware-turnstile/compare/v0.2.6...v0.2.7) (2025-02-19)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/cache digest to 0c907a7 ([ed3f0c8](https://github.com/creativer-at/shopware-turnstile/commit/ed3f0c810b1a6e5b5b1aad6f93218a8d38d77c3b))
+* **deps:** update dependency @zackad/prettier-plugin-twig to v0.15.2 ([803904f](https://github.com/creativer-at/shopware-turnstile/commit/803904fdec35459aa3cc09fcda7f7bba6f10fc8c))
+* **deps:** update dependency prettier to v3.5.0 ([87fc3ad](https://github.com/creativer-at/shopware-turnstile/commit/87fc3ada4c5ddfe2fc82a8f44f04c597433e7ac1))
+* **deps:** update dependency prettier to v3.5.1 ([07f18be](https://github.com/creativer-at/shopware-turnstile/commit/07f18bead444ca6f5fcafb0a2d7a07077db60dac))
+* **deps:** update node.js to v23.8.0 ([891b032](https://github.com/creativer-at/shopware-turnstile/commit/891b0323585018029046cfe016bb5a8a7a660183))
+* **deps:** update pnpm to v10.3.0 ([4ef6927](https://github.com/creativer-at/shopware-turnstile/commit/4ef6927b232890655a80c31b48bef0f23be8cb02))
+* **deps:** update pnpm to v10.4.0 ([bb9fca4](https://github.com/creativer-at/shopware-turnstile/commit/bb9fca43082a19a70fd6d8e6e4d3a084a0eac9a5))
+* **deps:** update pnpm to v10.4.1 ([67dccfa](https://github.com/creativer-at/shopware-turnstile/commit/67dccfa4bf653270998593ff5c5af88f11a4fd43))
+* enable automerge for prettier plugins ([7c7740e](https://github.com/creativer-at/shopware-turnstile/commit/7c7740e6d8e45893cd5fea8b9f39562778c7be03))
+
 ## [0.2.6](https://github.com/creativer-at/shopware-turnstile/compare/v0.2.5...v0.2.6) (2025-02-07)
 
 
