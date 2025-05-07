@@ -1,0 +1,6 @@
+savePrefix: ""
+autoInstallPeers: false
+strictPeerDependencies: true
+ignorePatchFailures: false
+patchedDependencies:
+  "@zackad/prettier-plugin-twig": "patches/@zackad__prettier-plugin-twig.patch"
