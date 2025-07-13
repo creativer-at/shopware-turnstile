@@ -14,8 +14,8 @@ importers:
   .:
     devDependencies:
       '@prettier/plugin-php':
-        specifier: 0.22.4
-        version: 0.22.4(prettier@3.6.2)
+        specifier: 0.23.0
+        version: 0.23.0(prettier@3.6.2)
       '@prettier/plugin-xml':
         specifier: 3.4.2
         version: 3.4.2(prettier@3.6.2)
@@ -85,8 +85,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@prettier/plugin-php@0.22.4':
-    resolution: {integrity: sha512-uZWqfyrwsxScIYkmVcfnoQGFmKVMXTHD5pqYT4l8fxzm5P3XY94hTPbf8X6TFCi2QTZBIot7GS8lfIjQjldc2g==}
+  '@prettier/plugin-php@0.23.0':
+    resolution: {integrity: sha512-8VeSOewhR9eBaQbxDS+NCkbjk57VKlCroz4zTNDKnLl6h4JXG2MLITZR89WDFdHS/E35s/uwtSDgnigWlbGvkQ==}
     peerDependencies:
       prettier: ^3.0.0
 
@@ -149,8 +149,8 @@ packages:
     engines: {node: '>=6'}
     hasBin: true
 
-  linguist-languages@7.27.0:
-    resolution: {integrity: sha512-Wzx/22c5Jsv2ag+uKy+ITanGA5hzvBZngrNGDXLTC7ZjGM6FLCYGgomauTkxNJeP9of353OM0pWqngYA180xgw==}
+  linguist-languages@8.0.0:
+    resolution: {integrity: sha512-qfzYmWmM/HOsrO/6YwN2f1DD39p3ObSuq8YgF9JLY9toQO39ZsPBPJoWwTtrqRvhkG+cQUgCOS9h/xRgwfqLxQ==}
 
   lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
@@ -158,8 +158,8 @@ packages:
   ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
 
-  php-parser@3.2.2:
-    resolution: {integrity: sha512-voj3rzCJmEbwHwH3QteON28wA6K+JbcaJEofyUZkUXmcViiXofjbSbcE5PtqtjX6nstnnAEYCFoRq0mkjP5/cg==}
+  php-parser@3.2.5:
+    resolution: {integrity: sha512-M1ZYlALFFnESbSdmRtTQrBFUHSriHgPhgqtTF/LCbZM4h7swR5PHtUceB2Kzby5CfqcsYwBn7OXTJ0+8Sajwkw==}
 
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
@@ -297,10 +297,10 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@prettier/plugin-php@0.22.4(prettier@3.6.2)':
+  '@prettier/plugin-php@0.23.0(prettier@3.6.2)':
     dependencies:
-      linguist-languages: 7.27.0
-      php-parser: 3.2.2
+      linguist-languages: 8.0.0
+      php-parser: 3.2.5
       prettier: 3.6.2
 
   '@prettier/plugin-xml@3.4.2(prettier@3.6.2)':
@@ -350,13 +350,13 @@ snapshots:
 
   jsesc@3.1.0: {}
 
-  linguist-languages@7.27.0: {}
+  linguist-languages@8.0.0: {}
 
   lodash@4.17.21: {}
 
   ms@2.1.3: {}
 
-  php-parser@3.2.2: {}
+  php-parser@3.2.5: {}
 
   picocolors@1.1.1: {}
 
