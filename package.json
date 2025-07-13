@@ -10,7 +10,7 @@
     "check": "pnpm format:check && pnpm lint"
   },
   "devDependencies": {
-    "@prettier/plugin-php": "0.22.4",
+    "@prettier/plugin-php": "0.23.0",
     "@prettier/plugin-xml": "3.4.2",
     "@trivago/prettier-plugin-sort-imports": "5.2.2",
     "@zackad/prettier-plugin-twig": "0.16.0",
