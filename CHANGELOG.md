@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.2.8](https://github.com/creativer-at/shopware-turnstile/compare/v0.2.7...v0.2.8) (2025-08-01)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency @prettier/plugin-php to v0.23.0 ([bac685c](https://github.com/creativer-at/shopware-turnstile/commit/bac685cc15e963d9c6190666c6c0051ed71eb685))
+* **deps:** update dependency @prettier/plugin-xml to v3.4.2 ([d491a96](https://github.com/creativer-at/shopware-turnstile/commit/d491a96fd9666a7745001162d30a0bbb0a3dc1e5))
+* **deps:** update dependency prettier to v3.6.2 ([aae5d8b](https://github.com/creativer-at/shopware-turnstile/commit/aae5d8b22108b281b645141104caee5078b464ab))
+* **deps:** update dependency prettier-plugin-tailwindcss to v0.6.14 ([556c465](https://github.com/creativer-at/shopware-turnstile/commit/556c4650d40a79375afca6474e3f48bc9153a7cc))
+* **deps:** update node.js to v24.4.0 ([3f82402](https://github.com/creativer-at/shopware-turnstile/commit/3f8240253dd309a920f35d4a8cac57f2932cc787))
+* **deps:** update node.js to v24.4.1 ([76f6b03](https://github.com/creativer-at/shopware-turnstile/commit/76f6b037a2dbbde31a1f85ebed9009791b0ef388))
+* **deps:** update node.js to v24.5.0 ([deddd37](https://github.com/creativer-at/shopware-turnstile/commit/deddd37dbceb71af6480536a923b6f4aa296d4eb))
+* **deps:** update pnpm to v10.13.1 ([8559c37](https://github.com/creativer-at/shopware-turnstile/commit/8559c37b32d604b78d072b54d141579cb9d4e2b4))
+* **deps:** update pnpm to v10.14.0 ([a00eb0d](https://github.com/creativer-at/shopware-turnstile/commit/a00eb0d899c7bc1d5f10d7532f6bd71e381c4856))
+
 ## [0.2.7](https://github.com/creativer-at/shopware-turnstile/compare/v0.2.6...v0.2.7) (2025-06-21)
 
 
