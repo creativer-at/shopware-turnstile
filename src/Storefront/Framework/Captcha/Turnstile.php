@@ -36,7 +36,7 @@ class Turnstile extends AbstractCaptcha
 
     $secretKey = EnvironmentHelper::getVariable(
       "TURNSTILE_SECRET",
-      "1x0000000000000000000000000000000AA"
+      "1x0000000000000000000000000000000AA",
     );
 
     try {

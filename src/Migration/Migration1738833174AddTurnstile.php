@@ -23,7 +23,7 @@ class Migration1738833174AddTurnstile extends MigrationStep
       "SELECT configuration_value FROM system_config WHERE configuration_key = :key",
       [
         "key" => self::CONFIG_KEY,
-      ]
+      ],
     );
 
     if (!$json) {
@@ -47,7 +47,7 @@ class Migration1738833174AddTurnstile extends MigrationStep
       ],
       [
         "configuration_key" => self::CONFIG_KEY,
-      ]
+      ],
     );
   }
 }
