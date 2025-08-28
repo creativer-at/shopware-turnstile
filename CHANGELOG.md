@@ -1,5 +1,28 @@
 # Changelog
 
+## [0.2.8](https://github.com/creativer-at/shopware-turnstile/compare/v0.2.7...v0.2.8) (2025-08-28)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/cache digest to 0400d5f ([5a770e1](https://github.com/creativer-at/shopware-turnstile/commit/5a770e17e4b2e9c3da8be5849aea8645fc240729))
+* **deps:** update actions/checkout action to v5 ([97d0975](https://github.com/creativer-at/shopware-turnstile/commit/97d0975f48a83eb71c7ae8dd26c88d2b62944802))
+* **deps:** update actions/checkout digest to 08eba0b ([94a1c78](https://github.com/creativer-at/shopware-turnstile/commit/94a1c7871c08fc4d106b5a10d9fddab4608b52cb))
+* **deps:** update dependency @prettier/plugin-php to v0.23.0 ([bac685c](https://github.com/creativer-at/shopware-turnstile/commit/bac685cc15e963d9c6190666c6c0051ed71eb685))
+* **deps:** update dependency @prettier/plugin-php to v0.24.0 ([f0977a9](https://github.com/creativer-at/shopware-turnstile/commit/f0977a911560aa3c0bfa23dac81a9e49b86e34e5))
+* **deps:** update dependency @prettier/plugin-xml to v3.4.2 ([d491a96](https://github.com/creativer-at/shopware-turnstile/commit/d491a96fd9666a7745001162d30a0bbb0a3dc1e5))
+* **deps:** update dependency prettier to v3.6.2 ([aae5d8b](https://github.com/creativer-at/shopware-turnstile/commit/aae5d8b22108b281b645141104caee5078b464ab))
+* **deps:** update dependency prettier-plugin-tailwindcss to v0.6.14 ([556c465](https://github.com/creativer-at/shopware-turnstile/commit/556c4650d40a79375afca6474e3f48bc9153a7cc))
+* **deps:** update googleapis/release-please-action digest to c2a5a2b ([f94c695](https://github.com/creativer-at/shopware-turnstile/commit/f94c6958fd4fa69f10eb2ab1491ed5085eac02dd))
+* **deps:** update node.js to v24.4.0 ([3f82402](https://github.com/creativer-at/shopware-turnstile/commit/3f8240253dd309a920f35d4a8cac57f2932cc787))
+* **deps:** update node.js to v24.4.1 ([76f6b03](https://github.com/creativer-at/shopware-turnstile/commit/76f6b037a2dbbde31a1f85ebed9009791b0ef388))
+* **deps:** update node.js to v24.5.0 ([deddd37](https://github.com/creativer-at/shopware-turnstile/commit/deddd37dbceb71af6480536a923b6f4aa296d4eb))
+* **deps:** update node.js to v24.6.0 ([7169893](https://github.com/creativer-at/shopware-turnstile/commit/716989329b86e00a9ec2c8f2092dbe5a9d239dba))
+* **deps:** update node.js to v24.7.0 ([3075325](https://github.com/creativer-at/shopware-turnstile/commit/307532535b6322c16768d42d755cd1e89083745c))
+* **deps:** update pnpm to v10.13.1 ([8559c37](https://github.com/creativer-at/shopware-turnstile/commit/8559c37b32d604b78d072b54d141579cb9d4e2b4))
+* **deps:** update pnpm to v10.14.0 ([a00eb0d](https://github.com/creativer-at/shopware-turnstile/commit/a00eb0d899c7bc1d5f10d7532f6bd71e381c4856))
+* **deps:** update pnpm to v10.15.0 ([9741111](https://github.com/creativer-at/shopware-turnstile/commit/974111109460330219e94e530cf0ec8353f2d3a2))
+
 ## [0.2.7](https://github.com/creativer-at/shopware-turnstile/compare/v0.2.6...v0.2.7) (2025-06-21)
 
 
