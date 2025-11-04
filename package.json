@@ -12,7 +12,7 @@
   "devDependencies": {
     "@prettier/plugin-php": "0.24.0",
     "@prettier/plugin-xml": "3.4.2",
-    "@trivago/prettier-plugin-sort-imports": "5.2.2",
+    "@trivago/prettier-plugin-sort-imports": "6.0.0",
     "@zackad/prettier-plugin-twig": "0.16.0",
     "prettier": "3.6.2",
     "prettier-plugin-tailwindcss": "0.7.1"
