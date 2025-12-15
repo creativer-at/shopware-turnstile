@@ -13,7 +13,7 @@
     "@prettier/plugin-php": "0.24.0",
     "@prettier/plugin-xml": "3.4.2",
     "@trivago/prettier-plugin-sort-imports": "6.0.0",
-    "@zackad/prettier-plugin-twig": "0.16.0",
+    "@zackad/prettier-plugin-twig": "0.16.1",
     "prettier": "3.7.4",
     "prettier-plugin-tailwindcss": "0.7.2"
   },
