@@ -20,8 +20,8 @@ importers:
         specifier: 3.4.2
         version: 3.4.2(prettier@3.7.4)
       '@trivago/prettier-plugin-sort-imports':
-        specifier: 6.0.1
-        version: 6.0.1(prettier@3.7.4)
+        specifier: 6.0.2
+        version: 6.0.2(prettier@3.7.4)
       '@zackad/prettier-plugin-twig':
         specifier: 0.16.2
         version: 0.16.2(patch_hash=c0637e1a3a3efff7630f05728b13fe312d032484be4cba06cd97ba4ad816c8c9)
@@ -30,7 +30,7 @@ importers:
         version: 3.7.4
       prettier-plugin-tailwindcss:
         specifier: 0.7.2
-        version: 0.7.2(@trivago/prettier-plugin-sort-imports@6.0.1(prettier@3.7.4))(@zackad/prettier-plugin-twig@0.16.2(patch_hash=c0637e1a3a3efff7630f05728b13fe312d032484be4cba06cd97ba4ad816c8c9))(prettier@3.7.4)
+        version: 0.7.2(@trivago/prettier-plugin-sort-imports@6.0.2(prettier@3.7.4))(@zackad/prettier-plugin-twig@0.16.2(patch_hash=c0637e1a3a3efff7630f05728b13fe312d032484be4cba06cd97ba4ad816c8c9))(prettier@3.7.4)
 
 packages:
 
@@ -94,8 +94,8 @@ packages:
     peerDependencies:
       prettier: ^3.0.0
 
-  '@trivago/prettier-plugin-sort-imports@6.0.1':
-    resolution: {integrity: sha512-6B13DCWDfAfh4AEJ43gRgeCSAQmlKG5LHqHzHc0lbUwgBy0rX7o41US+46Fd4XiXBx+JDGEz3NBadCbUls0dUQ==}
+  '@trivago/prettier-plugin-sort-imports@6.0.2':
+    resolution: {integrity: sha512-3DgfkukFyC/sE/VuYjaUUWoFfuVjPK55vOFDsxD56XXynFMCZDYFogH2l/hDfOsQAm1myoU/1xByJ3tWqtulXA==}
     engines: {node: '>= 20'}
     peerDependencies:
       '@vue/compiler-sfc': 3.x
@@ -318,7 +318,7 @@ snapshots:
       '@xml-tools/parser': 1.0.11
       prettier: 3.7.4
 
-  '@trivago/prettier-plugin-sort-imports@6.0.1(prettier@3.7.4)':
+  '@trivago/prettier-plugin-sort-imports@6.0.2(prettier@3.7.4)':
     dependencies:
       '@babel/generator': 7.28.5
       '@babel/parser': 7.28.5
@@ -388,11 +388,11 @@ snapshots:
 
   picocolors@1.1.1: {}
 
-  prettier-plugin-tailwindcss@0.7.2(@trivago/prettier-plugin-sort-imports@6.0.1(prettier@3.7.4))(@zackad/prettier-plugin-twig@0.16.2(patch_hash=c0637e1a3a3efff7630f05728b13fe312d032484be4cba06cd97ba4ad816c8c9))(prettier@3.7.4):
+  prettier-plugin-tailwindcss@0.7.2(@trivago/prettier-plugin-sort-imports@6.0.2(prettier@3.7.4))(@zackad/prettier-plugin-twig@0.16.2(patch_hash=c0637e1a3a3efff7630f05728b13fe312d032484be4cba06cd97ba4ad816c8c9))(prettier@3.7.4):
     dependencies:
       prettier: 3.7.4
     optionalDependencies:
-      '@trivago/prettier-plugin-sort-imports': 6.0.1(prettier@3.7.4)
+      '@trivago/prettier-plugin-sort-imports': 6.0.2(prettier@3.7.4)
       '@zackad/prettier-plugin-twig': 0.16.2(patch_hash=c0637e1a3a3efff7630f05728b13fe312d032484be4cba06cd97ba4ad816c8c9)
 
   prettier@3.7.4: {}
