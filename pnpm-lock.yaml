@@ -14,8 +14,8 @@ importers:
   .:
     devDependencies:
       '@prettier/plugin-php':
-        specifier: 0.24.0
-        version: 0.24.0(prettier@3.8.1)
+        specifier: 0.25.0
+        version: 0.25.0(prettier@3.8.1)
       '@prettier/plugin-xml':
         specifier: 3.4.2
         version: 3.4.2(prettier@3.8.1)
@@ -84,8 +84,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@prettier/plugin-php@0.24.0':
-    resolution: {integrity: sha512-x9l65fCE/pgoET6RQowgdgG8Xmzs44z6j6Hhg3coINCyCw9JBGJ5ZzMR2XHAM2jmAdbJAIgqB6cUn4/3W3XLTA==}
+  '@prettier/plugin-php@0.25.0':
+    resolution: {integrity: sha512-hi0NhucbspYqw5pZYKywEk5CxsBwA0pBcG6K08AZw7OQDoUm4Hhbxql7z/SzQGeTRHqak5PwDnVNgttZiZdrlg==}
     peerDependencies:
       prettier: ^3.0.0
 
@@ -175,8 +175,8 @@ packages:
   parse-statements@1.0.11:
     resolution: {integrity: sha512-HlsyYdMBnbPQ9Jr/VgJ1YF4scnldvJpJxCVx6KgqPL4dxppsWrJHCIIxQXMJrqGnsRkNPATbeMJ8Yxu7JMsYcA==}
 
-  php-parser@3.2.5:
-    resolution: {integrity: sha512-M1ZYlALFFnESbSdmRtTQrBFUHSriHgPhgqtTF/LCbZM4h7swR5PHtUceB2Kzby5CfqcsYwBn7OXTJ0+8Sajwkw==}
+  php-parser@3.5.1:
+    resolution: {integrity: sha512-0By/iMXxBM9nIapBXOdFGHlD2os9t/3Pk1aIavUzCH7jKFPjq1WYeOVOv/iXhELCjlL4ZlzKwK1keyxLQjll8g==}
 
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
@@ -307,10 +307,10 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@prettier/plugin-php@0.24.0(prettier@3.8.1)':
+  '@prettier/plugin-php@0.25.0(prettier@3.8.1)':
     dependencies:
       linguist-languages: 8.0.0
-      php-parser: 3.2.5
+      php-parser: 3.5.1
       prettier: 3.8.1
 
   '@prettier/plugin-xml@3.4.2(prettier@3.8.1)':
@@ -384,7 +384,7 @@ snapshots:
 
   parse-statements@1.0.11: {}
 
-  php-parser@3.2.5: {}
+  php-parser@3.5.1: {}
 
   picocolors@1.1.1: {}
 
