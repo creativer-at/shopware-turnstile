@@ -5,9 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 patchedDependencies:
-  '@zackad/prettier-plugin-twig':
-    hash: c0637e1a3a3efff7630f05728b13fe312d032484be4cba06cd97ba4ad816c8c9
-    path: patches/@zackad__prettier-plugin-twig.patch
+  '@zackad/prettier-plugin-twig': c0637e1a3a3efff7630f05728b13fe312d032484be4cba06cd97ba4ad816c8c9
 
 importers:
 
