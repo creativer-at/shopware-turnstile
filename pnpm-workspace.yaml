@@ -1,6 +1,11 @@
 savePrefix: ""
 autoInstallPeers: false
 strictPeerDependencies: true
+minimumReleaseAge: 1440
+blockExoticSubdeps: true
 ignorePatchFailures: false
+
+trustPolicy: "no-downgrade"
+
 patchedDependencies:
   "@zackad/prettier-plugin-twig": "patches/@zackad__prettier-plugin-twig.patch"
