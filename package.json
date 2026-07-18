@@ -15,7 +15,7 @@
     "@trivago/prettier-plugin-sort-imports": "6.0.2",
     "@zackad/prettier-plugin-twig": "0.17.0",
     "prettier": "3.9.5",
-    "prettier-plugin-tailwindcss": "0.8.0"
+    "prettier-plugin-tailwindcss": "0.8.1"
   },
   "engines": {
     "node": "26.5.0"
